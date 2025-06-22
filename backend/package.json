@@ -1,0 +1,23 @@
+{
+  "name": "@prisma/client",
+  "version": "6.7.0",
+  "description": "prisma",
+  "keywords": [
+    "prismaDB"
+  ],
+  "license": "ISC",
+  "author": "Tokslaw",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.8.0",
+    "prisma": "^6.7.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.7.0",
+    "@prisma/prisma-schema-wasm": "^6.11.0-5.c2b199af8b29362f1c6c31a1c73484b7354d6ad3"
+  }
+}

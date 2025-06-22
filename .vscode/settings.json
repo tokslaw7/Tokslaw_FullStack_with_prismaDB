@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "prisma_test",
+            "database": "${workspaceFolder:Intro_to_Prisma}/backend/prisma/test.sqlite"
+        }
+    ]
+}
