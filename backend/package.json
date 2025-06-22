@@ -14,10 +14,12 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^9.8.0",
+    "@prisma/client": "^6.10.1",
     "prisma": "^6.7.0"
   },
   "dependencies": {
-    "@prisma/client": "^6.7.0",
-    "@prisma/prisma-schema-wasm": "^6.11.0-5.c2b199af8b29362f1c6c31a1c73484b7354d6ad3"
+    "@prisma/prisma-schema-wasm": "^6.11.0-5.c2b199af8b29362f1c6c31a1c73484b7354d6ad3",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
   }
 }
