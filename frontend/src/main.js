@@ -16,7 +16,7 @@ async function fetchAndDisplayData() {
     dataContainer.textContent = 'No data found';
     return;
     }
-    
+
     // Create HTML for the data
     const html = `
         <ul>
@@ -30,6 +30,9 @@ async function fetchAndDisplayData() {
             <strong>Avatar:</strong>${item.avatar}<br>
             <strong>Initial Password:</strong> ${item.password}<br>
             <strong>Birthdate:</strong> ${new Date(item.birthdate).toDateString()}<br>
+            <strong>Registered:</strong> ${new Date(item.registeredAt).toDateString()}<br>
+            <strong>Created On:</strong> ${new Date(item.createdAt).toDateString()}<br>
+            <strong>Updated On:</strong> ${new Date(item.updatedAt).toDateString()}<br> 
             <strong>Profile Bio:</strong> ${item.profile?.bio || 'N/A'}<br><br>
             <ul>
             </ul>
