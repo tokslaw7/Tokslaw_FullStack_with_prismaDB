@@ -16,19 +16,27 @@ async function fetchAndDisplayData() {
     dataContainer.textContent = 'No data found';
     return;
     }
-
+    
     // Create HTML for the data
     const html = `
         <ul>
             ${data.map(item => `
-                <li>
-                    <h2>${item.name}</h2>
-                    <strong>Role: </strong>${item.role}<br>
-                    <strong>Email: </strong>${item.email}<br>
-                </li>`
-            ).join('')}
-        </ul>
-    `
+        <li>
+            <h2>${item.name}</h2>
+            <strong>Role:</strong> ${item.role}<br>
+            <strong>Email:</strong> ${item.email}<br>
+            <strong>Username:</strong> ${item.username}<br>
+            <strong>UUID:</strong> ${item.userId}<br>
+            <strong>Avatar:</strong>${item.avatar}<br>
+            <strong>Initial Password:</strong> ${item.password}<br>
+            <strong>Birthdate:</strong> ${new Date(item.birthdate).toDateString()}<br>
+            <strong>Profile Bio:</strong> ${item.profile?.bio || 'N/A'}<br><br>
+            <ul>
+            </ul>
+        </li>
+    `).join('')}
+  </ul>
+`
     dataContainer.innerHTML = html;
 
     } catch (error) {
