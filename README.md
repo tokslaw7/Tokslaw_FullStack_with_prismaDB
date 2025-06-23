@@ -20,10 +20,15 @@ npm run dev
  * To string up the Backend Server, enter the following command. "Change directory to backend folder"
 ``` 
 cd backend
-     ls           ---> to list folders and files 'node_modules'
-Run  `node server.js` -> springs up the backend server 
+ls           
+node server.js
 ```
+**ls  -> to list folders and files 'node_modules'**
+
+**node server.js -> springs up the backend server**
+
 - Both frontend and backend server are running simultaneously
+
 > - Frontend server is *making requests* to the backend 
 > - Backend server is *responding* to request received from the client-side
 > - Both *Pointing* at the same endpoint & *Using* same 
@@ -33,7 +38,31 @@ ${port} to handle requests
 
 ### Connect to Database
 
-Database to create schema
+### Create schema
+Three Models created:
+- User Model
+- Profile Model
+- Post Model
+
+### Relationship between Models created in this project.
+- User Model 
+>- It creates 5 Users
+>- It is tied to both Post and Profile Model
+- Profile Model is 1:1 relationship
+ >- It creates one  profile per user
+- Post Model
+>- Generates 2-4 Posts per User
+
+### Migrate DB**
+- **npx prisma validate**
+- **npx prisma migrate dev --name init**
+- **npx prisma studio**
+
+
+### How data is generated using JS 
+- A `seed.js` file inside prisma folder contains all the created Models logic for functionality
+- 
+
 
 ### Prerequisites
 
@@ -66,7 +95,7 @@ $ npm run dev
  touch test.sqlite
  prisma init
 ```
->- Change credentials in *.env* 
+>- Change credentials in *.env* DATABASE_URL="file:test.sqlite"
 >- In *schema.prisma* Create DB Models has needed.
 
 Express server 
