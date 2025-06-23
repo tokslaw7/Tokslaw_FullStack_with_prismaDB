@@ -20,8 +20,8 @@ npm run dev
  * To string up the Backend Server, enter the following command. "Change directory to backend folder"
 ``` 
 cd backend
-ls - to list folders and files ***NB:*** `node_modules`
-Run - 'node server.js' - springs up the backend server 
+     ls           ---> to list folders and files 'node_modules'
+Run  `node server.js` -> springs up the backend server 
 ```
 - Both frontend and backend server are running simultaneously
 > - Frontend server is *making requests* to the backend 
@@ -33,7 +33,7 @@ ${port} to handle requests
 
 ### Connect to Database
 
-Databse to create shchemaa
+Database to create schema
 
 ### Prerequisites
 
