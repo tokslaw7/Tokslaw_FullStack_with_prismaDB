@@ -60,9 +60,16 @@ Three Models created:
 
 
 ### How data is generated using JS 
-- A `seed.js` file inside backend folder contains all the created Models logic for functionality
-- A `server.js` file contains all routes the server will use to respond when a request is made and how the DB delivers data.
-** The frontend send requests to the backend endpoint and retrieves data.
+- A `seed.js` file inside backend folder contains all the created Models logic for functionality - *It adds (models)data to DB*
+- A `server.js` file contains all routes , the server will use to respond when a request is made and how the DB delivers data.
+
+** The frontend send requests to the backend endpoint (http://localhost:${port}/api/data), connects to DB and retrieves data which displays on client-side.
+>- Prisma method () handles GET requests about models 
+>- Middleware handles HTTP methods
+>- Response is returned in JSON format (Backend Repsonse to frontend requests)
+
+- Attach JS-Generated HTML to HTML element in existence
+- Fetch API data and Display data on client-side when the page loads.
 
 
 ### Prerequisites
