@@ -61,7 +61,7 @@ Three Models created:
 
 ### How data is generated using JS 
 - A `seed.js` file inside backend folder contains all the created Models logic for functionality
-- A server.js file contains all routes the server will respond when a request is made and how the DB delivers data.
+- A `server.js` file contains all routes the server will use to respond when a request is made and how the DB delivers data.
 ** The frontend send requests to the backend endpoint and retrieves data.
 
 
