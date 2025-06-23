@@ -91,7 +91,7 @@ $ npm run dev
  cd backend
  npm install prisma@6.7.0
  npm i @faker-js/faker --save-dev 
- mkdir *prisma* 
+ mkdir prisma
  cd prisma 
  touch test.sqlite
  prisma init
