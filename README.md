@@ -48,7 +48,7 @@ CSS styles to make the data visually appealing
 - User interactions, such as buttons or input fields, to trigger and control the API requests.
 - Implemented error handling to display a user-friendly message in case the API request fails.
 
-![FINAL API ](https://github.com/tokslaw7/Tokslaw_FullStack_with_prismaDB/blob/main/snapshots/frontend_dark_theme.png?raw=true)
+![FINAL API ](https://github.com/tokslaw7/Tokslaw_FullStack_with_prismaDB/blob/main/snapshots/github%20sample.png?raw=true)
 
 
 ## Deployment
