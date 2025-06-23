@@ -1,3 +1,6 @@
+import './styles.css';
+
+
 const dataContainer = document.getElementById('app');
 
 async function fetchAndDisplayData() {
@@ -19,21 +22,24 @@ async function fetchAndDisplayData() {
 
     // Create HTML for the data
     const html = `
-        <ul>
+        <ul class="item-list">
             ${data.map(item => `
-        <li>
+        <li class="item-card">
+            <div class="avatar-container">
+               <strong>Avatar</strong><img src="${item.avatar}" alt="Avatar of ${item.name}" class="avatar">
+               <div class="avatar-name">${item.username}</div>
+            </div>
             <h2>${item.name}</h2>
-            <strong>Role:</strong> ${item.role}<br>
-            <strong>Email:</strong> ${item.email}<br>
-            <strong>Username:</strong> ${item.username}<br>
-            <strong>UUID:</strong> ${item.userId}<br>
-            <strong>Avatar:</strong>${item.avatar}<br>
-            <strong>Initial Password:</strong> ${item.password}<br>
-            <strong>Birthdate:</strong> ${new Date(item.birthdate).toDateString()}<br>
-            <strong>Registered:</strong> ${new Date(item.registeredAt).toDateString()}<br>
-            <strong>Created On:</strong> ${new Date(item.createdAt).toDateString()}<br>
-            <strong>Updated On:</strong> ${new Date(item.updatedAt).toDateString()}<br> 
-            <strong>Profile Bio:</strong> ${item.profile?.bio || 'N/A'}<br><br>
+            <p><strong>Role:</strong> ${item.role}</p>
+            <p><strong>Email:</strong> ${item.email}</p>
+            <p><strong>Username:</strong> ${item.username}</p>
+            <p><strong>UUID:</strong> ${item.userId}</p>
+            <p><strong>Initial Password:</strong> ${item.password}</p>
+            <p><strong>Birthdate:</strong> ${new Date(item.birthdate).toDateString()}</p>
+            <p><strong>Registered:</strong> ${new Date(item.registeredAt).toDateString()}</p>
+            <p><strong>Created On:</strong> ${new Date(item.createdAt).toDateString()}</p>
+            <p><strong>Updated On:</strong> ${new Date(item.updatedAt).toDateString()}</p> 
+            <p><strong>Profile Bio:</strong> ${item.profile?.bio || 'N/A'}</p><br>
             <ul>
             </ul>
         </li>
@@ -50,3 +56,8 @@ async function fetchAndDisplayData() {
 
 // Fetch and display data when the page loads
 document.addEventListener('DOMContentLoaded', fetchAndDisplayData);
+
+//change theme
+ document.getElementById('toggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
