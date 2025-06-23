@@ -61,14 +61,13 @@ $ npm run dev
  cd backend
  npm install prisma@6.7.0
  npm i @faker-js/faker --save-dev 
- *{To fill DB tables with artificial data}* 
  mkdir *prisma* 
  cd prisma 
  touch test.sqlite
  prisma init
- - Change credentials in *.env* 
- - In *schema.prisma* Create DB Models has needed.
 ```
+>- Change credentials in *.env* 
+>- In *schema.prisma* Create DB Models has needed.
 
 Express server 
 ### Backend - What happens Inside 
