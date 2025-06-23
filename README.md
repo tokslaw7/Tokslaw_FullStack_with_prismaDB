@@ -4,7 +4,7 @@ A web application that fetches data from a random, free API, and displays it in 
 
 ## Getting Started
 
-- Clone project from `https://github.com/tokslaw7/Tokslaw_FullStack_with_prismaDB.git`
+- Clone project from ```https://github.com/tokslaw7/Tokslaw_FullStack_with_prismaDB.git```
 - Code are organized into multiple modules for better maintainability.
 - A clear, concise folder structure, including folders for HTML, CSS, and JavaScript files
 
