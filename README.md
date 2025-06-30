@@ -20,7 +20,12 @@ npm run dev
  * To string up the Backend Server, enter the following command. "Change directory to backend folder"
 ``` 
 cd backend
-ls           
+npm install
+Create .env and have it point to your SQLite database
+        * Use the DATABASE_URL key for Prisma
+        * Migrate the database using npx prisma migrate dev
+        * This will apply all the migrations we have created
+        * This will also generate a new prisma client
 node server.js
 ```
 **ls  -> to list folders and files 'node_modules'**
